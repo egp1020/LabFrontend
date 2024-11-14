@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-
-
-<h2>Adicionar nota</h2>
-
-<form>
-    <label for="code">Code:</label><br>
-    <input type="text" id="code" name="code" value=""><br>
-    <label for="title">Title:</label><br>
-    <input type="text" id="title" name="title" value=""><br><br>
-    <label for="description">Description:</label><br>
-    <input type="textarea" id="description" name="title" value=""><br><br>
-    <label for="duration">Duration:</label><br>
-    <input type="number" id="duration" name="title" value=""><br><br>
-   <input type="button" value="Guardar" class="btn btn-primary" onclick="add();">
-</form>
-
-
-
-<a href="../index.html" class="link-secondary">Volver al inicio</a>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-pink-600 hover:to-orange-600 text-teal-200 font-mono">
+        <main class="flex flex-col gap-4 justify-center items-center h-screen">
+            <div class="w-max bg-gray-900 shadow-2xl shadow-blue-950 rounded-xl p-32 justify-items-center">
+                <h1 class="font-black text-cyan-300 text-3xl mb-8">Adicionar nota</h1>
+                <div class="flex flex-col gap-4">
+                    <form class="flex flex-col gap-4">
+                        <input type="text" id="code" name="code" placeholder="Code" value=""
+                               class="w-full p-2 text-white placeholder:text-teal-100 border-b-2 border-sky-900 focus:border-red-900 bg-gradient-to-r from-cyan-500 to-blue-500 focus:from-pink-600 focus:to-orange-600 outline-none">
+                        <input type="text" id="title" name="title" placeholder="Title" value=""
+                               class="w-full p-2 text-white placeholder:text-teal-100 border-b-2 border-sky-900 focus:border-red-900 bg-gradient-to-r from-cyan-500 to-blue-500 focus:from-pink-600 focus:to-orange-600 outline-none">
+                        <input type="textarea" id="description" name="title" placeholder="Description" value=""
+                               class="w-full p-2 text-white placeholder:text-teal-100 border-b-2 border-sky-900 focus:border-red-900 bg-gradient-to-r from-cyan-500 to-blue-500 focus:from-pink-600 focus:to-orange-600 outline-none">
+                        <input type="number" id="duration" name="title" placeholder="Duration" value=""
+                               class="w-full p-2 text-white placeholder:text-teal-100 border-b-2 border-sky-900 focus:border-red-900 bg-gradient-to-r from-cyan-500 to-blue-500 focus:from-pink-600 focus:to-orange-600 outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+                       <input type="submit" value="Guardar"
+                              class="w-full bg-gradient-to-r from-pink-600 to-orange-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-2 px-4 rounded" onclick="add();">
+                    </form>
+                    <a href="../index.html"
+                       class="w-full text-center bg-gradient-to-r from-pink-600 to-orange-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold py-2 px-4 mb-6 rounded">
+                        Volver al inicio
+                    </a>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
 
 
